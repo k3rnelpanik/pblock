@@ -1,13 +1,15 @@
 # pBlock
-pBlock
 
-pBlock is a simple bash script that uses Magisk's in-built systemless hosts module to block porn sites from your mobile phone.
+pBlock is a simple bash script that uses Magisk's in-built systemless hosts module to block porn hosts (<a href="https://github.com/StevenBlack/hosts">Steven Black's hosts</a>) from your mobile phone.
 
-How To Use:
+<h3>NOTE:</h3>
+pBlock can only work on rooted android devices, and requires <a href="https://github.com/topjohnwu/Magisk/releases/latest">Magisk</a>, and its systemless hosts module to be able to block hosts. Please do not waste your time by trying to use this script on non-rooted (or devices rooted using solutions other than Magisk), as it will not work.
 
-First Time Setup:
+<h2>How To Use:</h2>
 
-1. Install Termux, and grant root permissions to it (by using 'su').
+<h3>First Time Setup:</h3>
+
+1. Install <a href="https://github.com/termux/termux-app/releases/latest">Termux</a>, and grant root permissions to it (by using 'su').
 
 2. Install the wget package within termux, using 'pkg install wget'
 
@@ -15,8 +17,8 @@ First Time Setup:
 
 4. Place the pBlock script in an easily accessible location, such as the internal storage root directory, and run it within an elevated (su) termux shell using 'sh /LOCATION_TO_SCRIPT.sh' (in this case, sh /sdcard/pBlock.sh)
 
-5. Voila, all porn hosts defined in the StevenBlack hosts file have been blocked.
+5. Voila, all porn hosts defined in the Steven Black hosts file have been blocked.
 
-Updating:
+<h3>Updating:</h3>
 
 Just run the script again by following step 4 and it'll update the hosts file to the latest one available. 
