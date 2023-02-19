@@ -14,6 +14,7 @@ do
   cat "$file" >> /sdcard/pblock/hosts && rm "$file"
 done
 cp /sdcard/pblock/hosts /data/adb/modules/hosts/system/etc/hosts
+rm /sdcard/pblock/hosts
 cp /data/adb/modules/hosts/system/etc/hosts /data/adb/modules/hosts/system/etc/hostse
 echo ">>> Done"
 echo ">>> Script by k3ernelpanik"
